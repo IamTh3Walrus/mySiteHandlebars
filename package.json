@@ -1,19 +1,26 @@
 {
   "name": "stephendoedotcom",
   "version": "1.0.0",
-  "description": "My personal portfolio webpage",
-  "main": "index.js",
+  "private": true,
+  "description": "My Personal Website",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IamTh3Walrus/mySiteHandlebars.git"
   },
   "author": "Stephen Doe",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IamTh3Walrus/mySiteHandlebars/issues"
+  },
+  "homepage": "https://github.com/IamTh3Walrus/mySiteHandlebars#readme",
   "dependencies": {
     "body-parser": "^1.15.2",
     "express": "^4.14.0",
-    "express-handlebars": "^3.0.0",
-    "handlebars": "^4.0.5",
-    "method-override": "^2.3.6",
-    "mysql": "^2.11.1"
+    "express-handlebars": "^3.0.0"
   }
 }

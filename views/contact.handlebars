@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/form-elements.css">
+    <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
+    <title>Stephen Doe</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="content">
+            <div class="container">
+                <ul class="nav nav-pills pull-right" role="tablist">
+                    <li><a href="home">Home</a></li>
+                    <li><a href="portfolio">Portfolio</a></li>
+                    <li class="active"><a href="contact">Contact</a></li>
+                </ul>
+                <h1 id="contactMe"></h1>
+                <div class="row">
+                    <form id="contactForm" role="form" action="/contact.php" method="post">
+                        <div class="form-group">
+                            <label class="sr-only" for="contact-email">Email</label>
+                            <input type="text" name="email" placeholder="Email..." class="contact-email form-control" id="contact-email">
+                        </div>
+                        <div class="form-group">
+                            <label class="sr-only" for="contact-subject">Subject</label>
+                            <input type="text" name="subject" placeholder="Subject..." class="contact-subject form-control" id="contact-subject">
+                        </div>
+                        <div class="form-group">
+                            <label class="sr-only" for="contact-message">Message</label>
+                            <textarea name="message" placeholder="Message..." class="contact-message form-control" id="contact-message"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-antispam">Antispam question: 7 + 5 = ?</label>
+                            <input type="text" name="antispam" placeholder="Your answer..." class="contact-antispam form-control" id="contact-antispam">
+                        </div>
+                        <button type="submit" class="btn">Send message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div id="footerText
+            ">Copyright © Stephen Doe 2016
+                <a href="https://www.linkedin.com/in/stephen-doe-094ab4123" target="_blank">
+                    <img src="/images/linkedin.png" id="linkedinIcon"></a>
+                <a href="https://github.com/IamTh3Walrus" target="_blank">
+                    <img src="/images/octocat.jpg" id="githubIcon">
+                </a>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+    <script type="text/javascript" src="/javascript/jquery-1.12.4.min.js"></script>
+    <script src="/javascript/typed.js"></script>
+    <script type="text/javascript" src="/javascript/contact.js"></script>
+    <script type="text/javascript" src="/javascript/javascript.js"></script>
+</body>
+
+</html>
