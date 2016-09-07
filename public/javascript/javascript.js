@@ -1,4 +1,8 @@
  $(function() {
+     $("#landingButton").hide();
+     $("#landingButton").toggle(1200);
+     $("#landingPageImage").hide();
+     $("#landingPageImage").toggle(1500);
      $("#nameFont").typed({
          strings: ["Stephen Doe"],
          typeSpeed: 300
@@ -7,10 +11,6 @@
          strings: ["Web Developer -  Freelance Writer"],
          typeSpeed: 100
      });
-     $("#landingButton").hide();
-     $("#landingButton").toggle(1200);
-     $("#landingPageImage").hide();
-     $("#landingPageImage").toggle(1500);
 
      $("#aboutMe").typed({
          strings: ["About Me"],
