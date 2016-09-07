@@ -103,6 +103,11 @@ body {
     font-family: 'Share Tech Mono', monospace;
 }
 
+#thankYou{
+    margin-top: 200px;
+    font-family: 'Share Tech Mono', monospace;
+}
+
 #landingButton {
     background-color: #000 !important;
     color: #fff;
