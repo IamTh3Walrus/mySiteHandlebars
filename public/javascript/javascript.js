@@ -1,8 +1,8 @@
  $(function() {
      $("#landingButton").hide();
-     $("#landingButton").toggle(1200);
+     $("#landingButton").toggle(1000);
      $("#landingPageImage").hide();
-     $("#landingPageImage").toggle(1500);
+     $("#landingPageImage").toggle(1200);
      $("#nameFont").typed({
          strings: ["Stephen Doe"],
          typeSpeed: 300
