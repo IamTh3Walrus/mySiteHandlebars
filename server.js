@@ -2,6 +2,9 @@
 var express = require('express');
 
 var app = express();
+var api_key = 'key-9d577efadf583cb225247268afc47cb4';
+var domain = 'mydomain.mailgun.org';
+var mailgun = require('mailgun-js')({apiKey: api_key, domain: domain});
 
 //Blocks header from containing information about the server.
 app.disable('x-powered-by');
