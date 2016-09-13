@@ -19,31 +19,37 @@
                     <li><a href="portfolio">Portfolio</a></li>
                     <li class="active"><a href="contact">Contact</a></li>
                 </ul>
-                <h1 id="contactMe"></h1>
-                <div class="row">
-                    <form id="contactForm" role="form" action="/contact.php" method="post">
-                        <div class="form-group">
+               <div class="page-header">
+                        <h1 id="contactMe"></h1>
+                        </div>
+                        <div class="contactUs">
+                        <form class="formContactUs" role="form"
+                          action="/process?form=contactus" method="POST">
+                         
+                          <input type="hidden" name="_csrf" value="{{csrf}}">
+                         
+                          <div class="form-group">
                             <label class="sr-only" for="contact-email">Email</label>
                             <input type="text" name="email" placeholder="Email..." class="contact-email form-control" id="contact-email">
+                        </div> <!-- End of form-group -->
+                         
+                          <div class="form-group">
+                            <label for="fieldQues" class="col-sm-2 control-label">
+                            Message</label>
+                            <div class="form-group">
+                            <label class="sr-only" for="contact-message"></label>
+                            <textarea name="ques" placeholder="Message..." class="contact-message form-control" id="contact-message"></textarea>
                         </div>
-                        <div class="form-group">
-                            <label class="sr-only" for="contact-subject">Subject</label>
-                            <input type="text" name="subject" placeholder="Subject..." class="contact-subject form-control" id="contact-subject">
+
+                            </div>
+                          </div> <!-- End of form-group -->
+                         
+                          <button type="submit" class="btn">Send message</button> <!-- End of form-group -->
+                        </form>
                         </div>
-                        <div class="form-group">
-                            <label class="sr-only" for="contact-message">Message</label>
-                            <textarea name="message" placeholder="Message..." class="contact-message form-control" id="contact-message"></textarea>
                         </div>
-                        <div class="form-group">
-                            <label for="contact-antispam">Antispam question: 7 + 5 = ?</label>
-                            <input type="text" name="antispam" placeholder="Your answer..." class="contact-antispam form-control" id="contact-antispam">
-                        </div>
-                        <button type="submit" class="btn">Send message</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-        <div id="footer">
+
+            <div id="footer">
             <div id="footerText
             ">Copyright © Stephen Doe 2016
                 <a href="https://www.linkedin.com/in/stephen-doe-094ab4123" target="_blank">
