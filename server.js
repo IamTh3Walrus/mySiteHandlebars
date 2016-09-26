@@ -6,7 +6,7 @@ console.log(connection);
 var app = express();
 
 //Connect to MongoBD to recieve email messages.
-var mongo = require('Mongodb');
+//var mongo = require('Mongodb');
 
 //Blocks header from containing information about the server.
 app.disable('x-powered-by');
