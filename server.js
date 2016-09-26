@@ -1,6 +1,6 @@
 //Requires the various node modules used with the app.
 var express = require('express');
-var connection = require('./config/connection');
+//var connection = require('./config/connection');
 console.log(connection);
 
 var app = express();
