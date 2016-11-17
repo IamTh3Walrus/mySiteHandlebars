@@ -32,10 +32,6 @@ body {
     line-height: 4em;
 }
 
-.sectionp {
-    font-weight: 10px;
-}
-
 .mainRow {
     margin-top: 50px;
 }
@@ -58,8 +54,8 @@ body {
 }
 
 #carouselCaption {
-    color: #0000ff;
-    text-shadow: 2px 2px #ffff00;
+    color: #ffff00;
+    text-shadow: 2px 2px #0000ff;
     font-size: 40px;
 }
 
