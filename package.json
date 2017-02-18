@@ -25,7 +25,7 @@
     "express-generator": "^4.13.4",
     "express-handlebars": "^3.0.0",
     "kerberos": "0.0.21",
-    "mailgun-js": "^0.7.12",
+    "mailgun-js": "^0.7.15",
     "method-override": "^2.3.6",
     "mongodb": "^2.0.55",
     "mysql": "^2.11.1",

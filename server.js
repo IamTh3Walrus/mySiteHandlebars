@@ -45,19 +45,30 @@ app.get('/portfolio', function(req, res) {
 
 app.get('/contact', function(req, res) {
     res.render('contact', {
-    csrf: 'CSRF token here'});
+        csrf: 'CSRF token here'
+    });
 });
 
 app.get('/thankyou', function(req, res) {
     res.render('thankyou');
 });
 
-app.post('/process', function(req, res){
-  console.log('Form : ' + req.query.form);
-  console.log('CSRF token : ' + req.body._csrf);
-  console.log('Email : ' + req.body.email);
-  console.log('Message : ' + req.body.ques);
-  res.redirect(303, '/thankyou');
+app.post('/process', function(req, res) {
+    var api_key = 'key-9d577efadf583cb225247268afc47cb4';
+    var domain = 'sandboxcc93a4dd62c948f9a8e118d5aedc5219.mailgun.org';
+    var mailgun = require('mailgun-js')({ apiKey: api_key, domain: domain });
+
+    var data = {
+        from: 'Stephen Website <postmaster@sandboxcc93a4dd62c948f9a8e118d5aedc5219.mailgun.org>',
+        to: 'redcard1016@yahoo.com',
+        subject: req.body.email,
+        text: req.body.ques
+    };
+
+    mailgun.messages().send(data, function(error, body) {
+        console.log(body);
+    });
+    res.redirect(303, '/thankyou');
 });
 
 //Tells the app to listen to the port.
